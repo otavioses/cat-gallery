@@ -1,0 +1,6 @@
+framework module Pods_cat_galleryTests {
+  umbrella header "Pods-cat-galleryTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
