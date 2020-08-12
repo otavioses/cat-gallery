@@ -10,15 +10,22 @@ import UIKit
 
 private let reuseIdentifier = "Cell"
 
+protocol CollectionViewProtocol {
+    func update(catList: Array<Cat>)
+    func reloadCollectionView()
+}
+
 class CollectionViewController: UICollectionViewController {
-    
-    let dataSource = ["cat","cat","cat","cat","cat","cat","cat","cat","cat","cat","cat","cat","cat","cat","cat","cat"]
+    var dataSource = Array<Cat>()
     let sectionInsets = UIEdgeInsets(top: 20.0, left: 20.0, bottom: 20.0, right: 20.0)
     let numberOfItemsPerRow: CGFloat = 3
     let spacingBetweenCells: CGFloat = 10
     
+    lazy private var presenter: CollectionViewPresenterProtocol = CollectionViewPresenter(view: self)
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        presenter.loadCatImages()
     }
     
     override func willTransition(to newCollection: UITraitCollection, with coordinator: UIViewControllerTransitionCoordinator) {
@@ -39,11 +46,9 @@ class CollectionViewController: UICollectionViewController {
     
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as? CollectionViewCell {
-            let image =  UIImage.init(named: dataSource[indexPath.row]) ?? UIImage()
-            cell.imageView.image = image
+            cell.imageView.image = dataSource[indexPath.row].image
             return cell
         }
-        
         return UICollectionViewCell()
     }
 }
@@ -66,5 +71,17 @@ extension CollectionViewController: UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
         return spacingBetweenCells
+    }
+}
+
+extension CollectionViewController: CollectionViewProtocol {
+    func update(catList: Array<Cat>) {
+        self.dataSource.removeAll()
+        self.dataSource.append(contentsOf: catList)
+        self.collectionView.reloadData()
+    }
+    
+    func reloadCollectionView() {
+        self.collectionView.reloadData()
     }
 }

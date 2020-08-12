@@ -14,7 +14,7 @@ import CommonCrypto
 import SwiftyJSON
 
 protocol ConnectionManagerProcotol {
-    func getList() throws -> Observable<JSON>
+    func getList(of: String) throws -> Observable<JSON>
 }
 
 class ConnectionManager: ConnectionManagerProcotol {
@@ -22,11 +22,11 @@ class ConnectionManager: ConnectionManagerProcotol {
     let urlBase = "https://api.imgur.com"
     let listApi = "/3/gallery/search"
     
-    func getList() throws -> Observable<JSON>   {
+    func getList(of: String) throws -> Observable<JSON>   {
         let parameters =
             Parameters(
                 dictionaryLiteral:
-                ("q", "cats"))
+                ("q", of))
                 
         let headers = HTTPHeaders(
             dictionaryLiteral:
@@ -66,7 +66,8 @@ class ConnectionManager: ConnectionManagerProcotol {
     
     func getImage(url: String) throws -> Observable<Data>   {
         return Observable<Data>.create { (observer) -> Disposable in
-            AF.request(url)
+            let session = Session.default
+            session.request(url)
                 .validate(statusCode: 200..<299)
                 .response { response in
                     if let error = response.error {

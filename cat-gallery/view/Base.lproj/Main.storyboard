@@ -33,8 +33,15 @@
                                             <rect key="frame" x="0.0" y="0.0" width="120" height="130"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                         </imageView>
+                                        <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" misplaced="YES" hidesWhenStopped="YES" animating="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="720-9S-owN">
+                                            <rect key="frame" x="50" y="55" width="20" height="20"/>
+                                        </activityIndicatorView>
                                     </subviews>
-                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="backgroundColor" red="0.66659259800000004" green="0.66670930390000005" blue="0.66658520700000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstItem="720-9S-owN" firstAttribute="centerY" secondItem="bAG-o5-pe0" secondAttribute="centerY" id="74c-PK-0Fe"/>
+                                        <constraint firstItem="720-9S-owN" firstAttribute="centerX" secondItem="bAG-o5-pe0" secondAttribute="centerX" id="dIk-WZ-ugy"/>
+                                    </constraints>
                                 </collectionViewCellContentView>
                                 <connections>
                                     <outlet property="imageView" destination="idB-D8-RW4" id="41q-dx-3Oy"/>

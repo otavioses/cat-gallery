@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -12,12 +12,17 @@
 		D92B28157169AAB72D94B08F /* Pods_cat_galleryTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31D1E03FFAC7EC90D58417DE /* Pods_cat_galleryTests.framework */; };
 		EF4B69F424E32BDD00603DB1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4B69F324E32BDD00603DB1 /* AppDelegate.swift */; };
 		EF4B69F624E32BDD00603DB1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4B69F524E32BDD00603DB1 /* SceneDelegate.swift */; };
-		EF4B69F824E32BDD00603DB1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4B69F724E32BDD00603DB1 /* ViewController.swift */; };
 		EF4B69FB24E32BDD00603DB1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF4B69F924E32BDD00603DB1 /* Main.storyboard */; };
 		EF4B69FD24E32BE000603DB1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF4B69FC24E32BE000603DB1 /* Assets.xcassets */; };
 		EF4B6A0024E32BE000603DB1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF4B69FE24E32BE000603DB1 /* LaunchScreen.storyboard */; };
 		EF4B6A0B24E32BE000603DB1 /* cat_galleryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4B6A0A24E32BE000603DB1 /* cat_galleryTests.swift */; };
 		EF4B6A1624E32BE000603DB1 /* cat_galleryUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4B6A1524E32BE000603DB1 /* cat_galleryUITests.swift */; };
+		EF4B6A2524E331AF00603DB1 /* ConnectionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4B6A2424E331AF00603DB1 /* ConnectionManager.swift */; };
+		EF4B6A2824E3331C00603DB1 /* SafePlace.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4B6A2724E3331C00603DB1 /* SafePlace.swift */; };
+		EF4B6A2A24E36C4F00603DB1 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4B6A2924E36C4F00603DB1 /* CollectionViewController.swift */; };
+		EF4B6A2C24E3739000603DB1 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4B6A2B24E3739000603DB1 /* CollectionViewCell.swift */; };
+		EF4B6A3124E38C9400603DB1 /* CollectionViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4B6A3024E38C9400603DB1 /* CollectionViewPresenter.swift */; };
+		EFF67A9924E3987B0071D587 /* Cat.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF67A9824E3987B0071D587 /* Cat.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,7 +55,6 @@
 		EF4B69F024E32BDD00603DB1 /* cat-gallery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "cat-gallery.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF4B69F324E32BDD00603DB1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EF4B69F524E32BDD00603DB1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		EF4B69F724E32BDD00603DB1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		EF4B69FA24E32BDD00603DB1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EF4B69FC24E32BE000603DB1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EF4B69FF24E32BE000603DB1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -61,6 +65,12 @@
 		EF4B6A1124E32BE000603DB1 /* cat-galleryUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "cat-galleryUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF4B6A1524E32BE000603DB1 /* cat_galleryUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cat_galleryUITests.swift; sourceTree = "<group>"; };
 		EF4B6A1724E32BE000603DB1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EF4B6A2424E331AF00603DB1 /* ConnectionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionManager.swift; sourceTree = "<group>"; };
+		EF4B6A2724E3331C00603DB1 /* SafePlace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafePlace.swift; sourceTree = "<group>"; };
+		EF4B6A2924E36C4F00603DB1 /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
+		EF4B6A2B24E3739000603DB1 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		EF4B6A3024E38C9400603DB1 /* CollectionViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewPresenter.swift; sourceTree = "<group>"; };
+		EFF67A9824E3987B0071D587 /* Cat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cat.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,7 +121,6 @@
 				4F47BC049031265B44C2341A /* Pods-cat-galleryTests.debug.xcconfig */,
 				86CB2A67609B6423BF44994C /* Pods-cat-galleryTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -140,12 +149,14 @@
 		EF4B69F224E32BDD00603DB1 /* cat-gallery */ = {
 			isa = PBXGroup;
 			children = (
+				EFF67A9724E3986B0071D587 /* model */,
+				EF4B6A2F24E38C4C00603DB1 /* presenter */,
+				EF4B6A2D24E3857900603DB1 /* view */,
+				EF4B6A2624E3330A00603DB1 /* utils */,
+				EF4B6A2324E3318500603DB1 /* infrastructure */,
 				EF4B69F324E32BDD00603DB1 /* AppDelegate.swift */,
 				EF4B69F524E32BDD00603DB1 /* SceneDelegate.swift */,
-				EF4B69F724E32BDD00603DB1 /* ViewController.swift */,
-				EF4B69F924E32BDD00603DB1 /* Main.storyboard */,
 				EF4B69FC24E32BE000603DB1 /* Assets.xcassets */,
-				EF4B69FE24E32BE000603DB1 /* LaunchScreen.storyboard */,
 				EF4B6A0124E32BE000603DB1 /* Info.plist */,
 			);
 			path = "cat-gallery";
@@ -167,6 +178,57 @@
 				EF4B6A1724E32BE000603DB1 /* Info.plist */,
 			);
 			path = "cat-galleryUITests";
+			sourceTree = "<group>";
+		};
+		EF4B6A2324E3318500603DB1 /* infrastructure */ = {
+			isa = PBXGroup;
+			children = (
+				EF4B6A2424E331AF00603DB1 /* ConnectionManager.swift */,
+			);
+			path = infrastructure;
+			sourceTree = "<group>";
+		};
+		EF4B6A2624E3330A00603DB1 /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				EF4B6A2724E3331C00603DB1 /* SafePlace.swift */,
+			);
+			path = utils;
+			sourceTree = "<group>";
+		};
+		EF4B6A2D24E3857900603DB1 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				EF4B69F924E32BDD00603DB1 /* Main.storyboard */,
+				EF4B69FE24E32BE000603DB1 /* LaunchScreen.storyboard */,
+				EF4B6A2E24E3858900603DB1 /* custom */,
+				EF4B6A2924E36C4F00603DB1 /* CollectionViewController.swift */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		EF4B6A2E24E3858900603DB1 /* custom */ = {
+			isa = PBXGroup;
+			children = (
+				EF4B6A2B24E3739000603DB1 /* CollectionViewCell.swift */,
+			);
+			path = custom;
+			sourceTree = "<group>";
+		};
+		EF4B6A2F24E38C4C00603DB1 /* presenter */ = {
+			isa = PBXGroup;
+			children = (
+				EF4B6A3024E38C9400603DB1 /* CollectionViewPresenter.swift */,
+			);
+			path = presenter;
+			sourceTree = "<group>";
+		};
+		EFF67A9724E3986B0071D587 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				EFF67A9824E3987B0071D587 /* Cat.swift */,
+			);
+			path = model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -408,7 +470,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EF4B69F824E32BDD00603DB1 /* ViewController.swift in Sources */,
+				EF4B6A2A24E36C4F00603DB1 /* CollectionViewController.swift in Sources */,
+				EF4B6A2524E331AF00603DB1 /* ConnectionManager.swift in Sources */,
+				EF4B6A2C24E3739000603DB1 /* CollectionViewCell.swift in Sources */,
+				EF4B6A2824E3331C00603DB1 /* SafePlace.swift in Sources */,
+				EFF67A9924E3987B0071D587 /* Cat.swift in Sources */,
+				EF4B6A3124E38C9400603DB1 /* CollectionViewPresenter.swift in Sources */,
 				EF4B69F424E32BDD00603DB1 /* AppDelegate.swift in Sources */,
 				EF4B69F624E32BDD00603DB1 /* SceneDelegate.swift in Sources */,
 			);
