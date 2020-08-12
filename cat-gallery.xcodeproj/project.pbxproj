@@ -52,7 +52,7 @@
 		86CB2A67609B6423BF44994C /* Pods-cat-galleryTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cat-galleryTests.release.xcconfig"; path = "Target Support Files/Pods-cat-galleryTests/Pods-cat-galleryTests.release.xcconfig"; sourceTree = "<group>"; };
 		B06EACCB3A7BA3114D80ECBF /* Pods-cat-gallery-cat-galleryUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cat-gallery-cat-galleryUITests.release.xcconfig"; path = "Target Support Files/Pods-cat-gallery-cat-galleryUITests/Pods-cat-gallery-cat-galleryUITests.release.xcconfig"; sourceTree = "<group>"; };
 		B6252F8FC9E7A3BDE25D44AF /* Pods_cat_gallery_cat_galleryUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_cat_gallery_cat_galleryUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		EF4B69F024E32BDD00603DB1 /* cat-gallery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "cat-gallery.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF4B69F024E32BDD00603DB1 /* Cat Gallery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Cat Gallery.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF4B69F324E32BDD00603DB1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EF4B69F524E32BDD00603DB1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		EF4B69FA24E32BDD00603DB1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -139,7 +139,7 @@
 		EF4B69F124E32BDD00603DB1 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				EF4B69F024E32BDD00603DB1 /* cat-gallery.app */,
+				EF4B69F024E32BDD00603DB1 /* Cat Gallery.app */,
 				EF4B6A0624E32BE000603DB1 /* cat-galleryTests.xctest */,
 				EF4B6A1124E32BE000603DB1 /* cat-galleryUITests.xctest */,
 			);
@@ -250,7 +250,7 @@
 			);
 			name = "cat-gallery";
 			productName = "cat-gallery";
-			productReference = EF4B69F024E32BDD00603DB1 /* cat-gallery.app */;
+			productReference = EF4B69F024E32BDD00603DB1 /* Cat Gallery.app */;
 			productType = "com.apple.product-type.application";
 		};
 		EF4B6A0524E32BE000603DB1 /* cat-galleryTests */ = {
@@ -659,7 +659,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.otavioses.cat-gallery";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Cat Gallery";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -678,7 +678,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.otavioses.cat-gallery";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Cat Gallery";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

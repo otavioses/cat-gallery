@@ -11,8 +11,6 @@ import UIKit
 private let reuseIdentifier = "Cell"
 
 protocol CollectionViewProtocol {
-    func update(catList: Array<Cat>)
-    func reloadCollectionView()
     func insert(cat: Cat)
 }
 
@@ -76,18 +74,8 @@ extension CollectionViewController: UICollectionViewDelegateFlowLayout {
 }
 
 extension CollectionViewController: CollectionViewProtocol {
-    func update(catList: Array<Cat>) {
-        self.dataSource.removeAll()
-        self.dataSource.append(contentsOf: catList)
-        self.collectionView.reloadData()
-    }
-    
     func insert(cat: Cat) {
         self.dataSource.append(cat)
-        self.collectionView.reloadData()
-    }
-    
-    func reloadCollectionView() {
         self.collectionView.reloadData()
     }
 }

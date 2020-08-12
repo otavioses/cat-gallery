@@ -16,15 +16,12 @@ protocol CollectionViewPresenterProtocol {
 class CollectionViewPresenter: NSObject {
     
     private var collectionViewProcotol: CollectionViewProtocol
-    var connectionControll = 0.0
-    var countReturn = 0
     
     init(view: CollectionViewProtocol) {
         self.collectionViewProcotol = view
     }
     
     func parseCatList(json: JSON)  {
-        
         var list = Array<Cat>()
         if let values = json.array {
             for value in values {
@@ -38,24 +35,20 @@ class CollectionViewPresenter: NSObject {
         }
     }
     private func getImage(cat: Cat, list: Array<Cat>) {
-        connectionControll += 1
-        print("connectionControll - \(connectionControll)")
-        Timer.scheduledTimer(withTimeInterval: connectionControll * 0.3, repeats: false) { (timer) in
-            do {
-                _ = try ConnectionManager().getImage(url: cat.link).subscribe { event in
-                    switch event {
-                    case .next(let result):
-                        if let image = UIImage(data: result) {
-                            cat.image = image
-                            self.collectionViewProcotol.insert(cat: cat)
-                        }
-                    case .error(let error):
-                        print("error \(error.localizedDescription)")
-                    case .completed: break
+        do {
+            _ = try ConnectionManager().getImage(url: cat.link).subscribe { event in
+                switch event {
+                case .next(let result):
+                    if let image = UIImage(data: result) {
+                        cat.image = image
+                        self.collectionViewProcotol.insert(cat: cat)
                     }
+                case .error(let error):
+                    print("error \(error.localizedDescription)")
+                case .completed: break
                 }
-            } catch {
             }
+        } catch {
         }
     }
 }
