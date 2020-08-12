@@ -36,10 +36,6 @@ class CollectionViewPresenter: NSObject {
                 }
             }
         }
-        if !list.isEmpty {
-            collectionViewProcotol.update(catList: list)
-        }
-        
     }
     private func getImage(cat: Cat, list: Array<Cat>) {
         connectionControll += 1
@@ -51,9 +47,7 @@ class CollectionViewPresenter: NSObject {
                     case .next(let result):
                         if let image = UIImage(data: result) {
                             cat.image = image
-                            self.countReturn += 1
-                            print("countReturn - \(self.countReturn)")
-                            self.collectionViewProcotol.reloadCollectionView()
+                            self.collectionViewProcotol.insert(cat: cat)
                         }
                     case .error(let error):
                         print("error \(error.localizedDescription)")

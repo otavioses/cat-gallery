@@ -14,8 +14,8 @@
             filePath = "cat-gallery/infrastructure/ConnectionManager.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "59"
-            endingLineNumber = "59"
+            startingLineNumber = "60"
+            endingLineNumber = "60"
             landmarkName = "get(_:_:_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -23,16 +23,32 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "6A6C571A-8698-45F7-88E3-8A63D6191EE2"
+            uuid = "6BD30C43-03C6-4F59-A4E3-F570DE39B3B0"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "cat-gallery/presenter/CollectionViewPresenter.swift"
+            filePath = "cat-gallery/infrastructure/ConnectionManager.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "30"
-            endingLineNumber = "30"
-            landmarkName = "parseCatList(json:)"
+            startingLineNumber = "93"
+            endingLineNumber = "93"
+            landmarkName = "getImage2(cats:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F80D0204-0F86-433C-AA98-B9B4C1D1801E"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "cat-gallery/infrastructure/ConnectionManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "99"
+            endingLineNumber = "99"
+            landmarkName = "getImage2(cats:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
